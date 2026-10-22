@@ -17,7 +17,10 @@ int readin( void)
         printf("Error, number of weights should be between 1 and %d", MAX);
         return 0;
     }
-    
+    for (i = 0; i < num; i++) {
+        printf("Enter the weight for x, y, and mass %d", i + 1);
+        scanf("%f %f %f", &masses[i].x, &masses[i].y, &masses[i].mass);
+    }
     return num;
 
 /* Write this function to read in the data
