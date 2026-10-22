@@ -8,15 +8,16 @@ struct cg{// structure to hold x and y coordinates and mass
 int readin( void)
 {
     int num;
-    prinf("Enter the number of weights: ");
+    printf("Enter the number of weights: ");
     scanf("%d", &num);
 
-    if (num > 1, num < MAX){     //Checks if number of weights entered is between 1 and Max
+    if (num >= 1 && num <= MAX){     //Checks if number of weights entered is between 1 and Max
 
     } else{
-        printf("Error");
+        printf("Error, number of weights should be between 1 and %d", MAX);
+        return 0;
     }
-
+    
     return num;
 
 /* Write this function to read in the data
