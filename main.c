@@ -7,6 +7,18 @@ struct cg{// structure to hold x and y coordinates and mass
 
 int readin( void)
 {
+    int num;
+    prinf("Enter the number of weights: ");
+    scanf("%d", &num);
+
+    if (num > 1, num < MAX){     //Checks if number of weights entered is between 1 and Max
+
+    } else{
+        printf("Error");
+    }
+
+    return num;
+
 /* Write this function to read in the data
 into the array masses
 note that this function should return the number of
@@ -15,6 +27,7 @@ masses read in from the file */
 }
 void computecg( int n_masses)
 {
+    float sum_x = 0, sum_y = 0, total_mass = 0;
 /* Write this function to compute the C of G
 and print the result */
 }
